@@ -41,6 +41,15 @@ namespace _1_lab
         {
             this.data = _data;
         }
+                /// <summary>
+        ///Confert txt file to string
+        /// </summary>
+        /// <returns></returns>
+        public string FileToString()
+        {
+            string s = System.IO.File.ReadAllText(path).Replace("\n", " ");
+            return s;
+        }
 
     }
 }
