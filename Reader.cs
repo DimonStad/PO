@@ -50,6 +50,13 @@ namespace _1_lab
             string s = System.IO.File.ReadAllText(path).Replace("\n", " ");
             return s;
         }
+                /// <summary>
+        ///Convert string to file
+        /// </summary>
+        public void StringToNewFile()
+        {
+            System.IO.File.WriteAllText(path,data);
+        }
 
     }
 }
