@@ -57,6 +57,13 @@ namespace _1_lab
         {
             System.IO.File.WriteAllText(path,data);
         }
+                /// <summary>
+        ///Append file by string
+        /// </summary>
+        public void AppendFile()
+        {
+            System.IO.File.AppendAllText(path,data);
+        }
 
     }
 }
