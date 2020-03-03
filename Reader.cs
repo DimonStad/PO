@@ -33,36 +33,13 @@ namespace _1_lab
         {
             this.path = _path;
         }
-       /// <summary>
+        /// <summary>
         /// String that will be writed to file
         /// </summary>
         /// <param name="_data">String</param>
         public void Data(string _data)
         {
             this.data = _data;
-        }
-        /// </summary>
-        /// <returns></returns>
-        public string FileToString()
-        {
-            string s = System.IO.File.ReadAllText(path).Replace("\n", " ");
-            return s;
-        }
-
-        /// <summary>
-        ///Convert string to file
-        /// </summary>
-        public void StringToNewFile()
-        {
-            System.IO.File.WriteAllText(path,data);
-        }
-
-        /// <summary>
-        ///Append file by string
-        /// </summary>
-        public void AppendFile()
-        {
-            System.IO.File.AppendAllText(path,data);
         }
 
     }
