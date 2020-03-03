@@ -64,6 +64,15 @@ namespace _1_lab
         {
             System.IO.File.AppendAllText(path,data);
         }
+                /// <summary>
+        ///Make copy of file
+        /// </summary>
+        /// <param name="FromFile">Name of copied file</param>
+        /// <param name="ToFile">Name of new file</param>
+        public static void CopyFile(string FromFile, string ToFile)
+        {
+            System.IO.File.Copy(FromFile,ToFile,true);
+        }
 
     }
 }
